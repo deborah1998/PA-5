@@ -80,17 +80,18 @@ Follow the programming assignment requirements document for comments, formatting
 Recall that you may not do someone else’s work, or have someone else do your work. Sharing of solutions is an honor code violation. This includes someone who is not in the class, including a tutor, writing any or all of your algorithm or code or dictating to you how to do it. As everyone in the class is solving the same problem, no code may change hands. See the syllabus for details or ask the professor if you are unsure.
 
 ## EXTRA CREDIT 
-Create an additional question for your program to solve, and incorporate it into your code. The more impressive, the more extra credit (up to 2 points). *Describe in extracredit.txt the question you are answering (keep it brief).*
+Create an additional question for your program to solve, and incorporate it into your code. The more impressive, the more extra credit (up to 2 points). *Describe in extracredit.txt the question you are answering, and what function it is calculated in (keep it brief).*
 
 ## REFLECTION
-Write a short reflection about the programming assignment in reflection.txt: what did you learn, what would you do differently next time, what was difficult, what do you like/dislike about working with files?  This should be no more than a page.
+Write a short reflection about the programming assignment in reflection.txt: what did you learn, what would you do differently next time, what was difficult, what do you like/dislike about working with files/functions/lists?  This should be no more than a page.
 
 ## FINAL SUBMISSION   
 * To GitHub:
   * Your .py file
-  * A brief description of why you deserve extra credit in extracredit.txt if applicable
+  * A brief description in extracredit.txt as described above, if applicable
   * Your reflection of the programming assignment in reflection.txt
   * Your test cases in testcases.txt.
+  * Your test file in testinput.txt
   * Note: You are not required to turn in an updated algorithm for this PA
 * Hardcopy in class:
   * A printout of your .py file
