@@ -50,7 +50,7 @@ The second stage is to design your solution based on the requirements:
 2. Write an algorithm for each function. This algorithm includes parameters, calculations, and returned values. This algorithm should include your personally designed question.
 3. Double check that you included all of the requirements, and appropriate error checking.
 
-*NOTE:* There are no aspects of this design/code that you can google how to solve. The only appropriate googling will be if you want to understand more about earthquake data.
+*NOTE:* There are no aspects of this design/code that you can google how to solve. The only appropriate googling will be if you want to understand more about earthquake data, or are looking up a specific Python module.
 
 **DESIGN SUBMISSION: 11/16/16**
 Submit to GitHub: your algorithm for your program in designInitial.txt, following the format we've been using.
@@ -69,6 +69,7 @@ After your design is complete and correct, it’s time to start programming and 
   * Remember to state the purpose of the program
   * Follow iterative development to make your life easier. Make sure you correctly read in and store the data. Then implement ONE question, and get that working. Then worry about adding in the next question. New questions shouldn't stop old questions from working, but should only add on to it.
   * To program the final question, you will need to use the math module. You should look up what each of the functions you need is called in the math module, and modify the equation to work in Python.
+  * You may find using the sep and end parameters for the print function useful for your output formatting. You can read about them in your book or look them up online.
 * Testing: Make sure it works correctly; give it sample input, and check that the output is correct.
   * Create a test file that contains at most 10-15 lines from the original file, or make up your own data in the same format. Name it testinput.txt. Create a set of test cases based on this test file (1 case per question). If you have a representative set of 10 lines, then if it works on this file then it *probably* works on the real file. This is a standard way to test file code, because it makes it easier to figure out the right answer.
   * Test your program using the test cases. Also test all error checking. Make sure it seems to work with the full file as well.
