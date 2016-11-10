@@ -19,7 +19,7 @@ The purpose of this assignment is to give you practice with
 
 ## REQUIREMENTS ANALYSIS
 The first stage in your programming assignment is the requirements analysis stage.  You need to make sure you understand the below requirements for what your program needs to do. 
-First, you need to understand your data. Your data is comma separated, like the movie data was in a prior lab.
+First, you need to understand your data in quakes.csv. Your data is comma separated, like the movie data was in a prior lab.
 
 Each line in the file contains:
 * The date and time of the earthquake in the format year-month-dayThour:minute:secondsZ
