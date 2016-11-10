@@ -35,7 +35,6 @@ Each line in the file contains:
 * The magnitude error (0 to 100), Uncertainty of reported magnitude of the event; The estimated standard error of the magnitude.
 
 Your program must work for any file of the above format, and should determine the following for the user:
-* Given an id provided by the user, output all information about that earthquake in an easy to read format
 * Output to a file (name given by the user) all earthquakes that occurred on a specific date (provided by the user). Should be in the same format as the original input file.
 * Output to the user the average magnitude of the earthquakes in the file
 * Output to the user the number of earthquakes within a specific distance of a specific location. Distance is given by user as kilometers, and location is given by user as a latitude and longitude. You must calculate a distance between 2 points based on latitude and longitude.  The shortest distance between two given points P1=(lat1, lon1) and P2=(lat2, lon2) can be calculated using the formula distance = arccos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(lon1 - lon2)) * 6371. Note that one of these points comes from the file, and one of these points comes from the user, and if you just copy/paste this equation into Python it WILL NOT work. See requirements below about programming.
