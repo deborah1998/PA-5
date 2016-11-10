@@ -35,20 +35,26 @@ Each line in the file contains:
 * The magnitude error (0 to 100), Uncertainty of reported magnitude of the event; The estimated standard error of the magnitude.
 
 Your program must work for any file of the above format, and should determine the following for the user:
+* Given an id provided by the user, output all information about that earthquake in an easy to read format
+* Output to a file (name given by the user) all earthquakes that occurred on a specific date (provided by the user). Should be in the same format as the original input file.
+* Output to the user the average magnitude of the earthquakes in the file
+* Output to the user the number of earthquakes within a specific distance of a specific location. Distance is given by user as kilometers, and location is given by user as a latitude and longitude. You must calculate a distance between 2 points based on latitude and longitude.  The shortest distance between two given points P1=(lat1, lon1) and P2=(lat2, lon2) can be calculated using the formula distance = arccos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(lon1 - lon2)) * 6371. Note that one of these points comes from the file, and one of these points comes from the user, and if you just copy/paste this equation into Python it WILL NOT work. See requirements below about programming.
 
+Your program must allow the user to choose which of the above options they want to do, and after completing the chosen option, must allow the user to choose another option or choose to end the program.
+
+Your program should have good error checking so that it doesn't crash. Some examples you need to consider: file name checking, try/except in file processing functions, and checking that input by the user is appropriate for the data they are supposed to be inputting (type or value).
 
 ## DESIGN
 The second stage is to design your solution based on the requirements:
 
-1. Determine what you want your 4th question to be and list that at the top of designInitial.txt as "My question: ". Write in a similar format to the question above (so, as a question, not as how you will solve it).
-2. Determine the tasks being accomplished in your program. 
-3. Write an algorithm for each function. This algorithm includes parameters, calculations, and returned values. This algorithm should include your personally designed question.
-4. Double check that you included all of the requirements, and appropriate error checking.
+1. Determine the tasks being accomplished in your program. 
+2. Write an algorithm for each function. This algorithm includes parameters, calculations, and returned values. This algorithm should include your personally designed question.
+3. Double check that you included all of the requirements, and appropriate error checking.
 
 *NOTE:* There are no aspects of this design/code that you can google how to solve. The only appropriate googling will be if you want to understand more about earthquake data.
 
 **DESIGN SUBMISSION: 11/16/16**
-Submit to GitHub: the description of your self-designed question and your algorithm for your program in designInitial.txt, following the format we've been using.
+Submit to GitHub: your algorithm for your program in designInitial.txt, following the format we've been using.
 
 ***Remember to double check on github.com that your files pushed. If they didn’t, you need to push them. I can only see what is on github.com, not what is only on your computer.
 
@@ -63,6 +69,7 @@ After your design is complete and correct, it’s time to start programming and 
   * Remember to define functions before they are used (so if function A calls function B, you need to define function B first in your program)
   * Remember to state the purpose of the program
   * Follow iterative development to make your life easier. Make sure you correctly read in and store the data. Then implement ONE question, and get that working. Then worry about adding in the next question. New questions shouldn't stop old questions from working, but should only add on to it.
+  * To program the final question, you will need to use the math module. You should look up what each of the functions you need is called in the math module, and modify the equation to work in Python.
 * Testing: Make sure it works correctly; give it sample input, and check that the output is correct.
   * Create a test file that contains at most 10-15 lines from the original file, or make up your own data in the same format. Name it testinput.txt. Create a set of test cases based on this test file (1 case per question). If you have a representative set of 10 lines, then if it works on this file then it *probably* works on the real file. This is a standard way to test file code, because it makes it easier to figure out the right answer.
   * Test your program using the test cases. Also test all error checking. Make sure it seems to work with the full file as well.
