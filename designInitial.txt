@@ -1,8 +1,6 @@
 
 
 
-
-
 Function Name:read_in_file
 Purpose:read in a file from the user and return it once they give one that exists
 Parameters:None
@@ -33,36 +31,18 @@ Algorithm:
 
 
 
-
-
 Function Name:find_earthquakes_on_date
-Purpose: find and otput to a filr all earthquakes that occured on a specific date
+Purpose: find and output to a file all earthquakes that occured on a specific date
 Parameters:the list earthquakes
-Return:count
+Return:none
 Algorithm:
 
 1.)Open the output file
-2.)set count equal to zero
-3.)Ask the user to input a specific date to find all earthquakes for, store result in variable earthquake _date
-4.)for i in range of the length of earthquakes:
+2.)Ask the user to input a specific date to find all earthquakes for, store result in variable earthquake _date
+3.)for i in range of the length of earthquakes:
     a.)if earthquake_date equals earthquake [i][0]
-          tab
-
-
-
-
-
-def find_nationality(best_actress):
-    count=0
-    nationality= input("Please enter a nationality:")
-    for i in range (len(best_actress)):
-        if nationality.strip().lower() == best_actress[i][4].strip().lower():
-            count+=1
-    return count
-
-
-
- Output to a file (name given by the user) all earthquakes that occurred on a specific date (provided by the user).
+          i)print earthquake [i][0] to the output file
+4.)close the output file
 
 
 
@@ -85,7 +65,7 @@ Algorithm:
 
 
 Function Name:num_of_earthquakes_in_distance
-Purpo
+Purpose:
 
 
 
@@ -100,5 +80,5 @@ Purpo
   The shortest distance between two given points P1=(lat1, lon1) and P2=(lat2, lon2) can be calculated using the formula distance
   = arccos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(lon1 - lon2)) * 6371. Note that one of these points comes from the file,
   and one of these points comes from the user, and if you just copy/paste this equation into Python it WILL NOT work.
-  See requirements below about programming.
+
 
