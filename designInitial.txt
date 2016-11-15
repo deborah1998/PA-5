@@ -65,7 +65,14 @@ Algorithm:
 
 
 Function Name:num_of_earthquakes_in_distance
-Purpose:
+Purpose:To find the number of earthquakes within a specific distance of a specific location
+Paramaters:
+Return:
+Algorithm:
+1.)
+2.)
+3.)
+4.)
 
 
 
@@ -74,11 +81,13 @@ Purpose:
 
 
 
-* Output to the user the number of earthquakes within
- a specific distance of a specific location. Distance is given by user as kilometers,
- and location is given by user as a latitude and longitude. You must calculate a distance between 2 points based on latitude and longitude.
-  The shortest distance between two given points P1=(lat1, lon1) and P2=(lat2, lon2) can be calculated using the formula distance
-  = arccos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(lon1 - lon2)) * 6371. Note that one of these points comes from the file,
-  and one of these points comes from the user, and if you just copy/paste this equation into Python it WILL NOT work.
-
+Function Name:main
+Purpose:run the overall program
+Paramaters:none
+Return:none
+Algorithm:
+1.)
+2.)Ask the user to to enter a name for the outputfile name
+3.)
+4.)
 
