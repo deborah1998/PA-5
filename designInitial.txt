@@ -17,13 +17,12 @@ Algorithm:
 
 Function Name:read_file
 Purpose:read from the file
-Parameters:filename,outfile_name
-Return:none
+Parameters:filename
+Return:earthquakes list
 Algorithm:
 1.)try
 2.)Open the input file from the user.
-3.)Open the output file that the user names.
-4.)create an empty list and store it in the variable earthquakes
+3.)create an empty list and store it in the variable earthquakes
 5.)for every line in the input  file
     a.)strip and then  split every element in the line at the comma, store these elements in the variable list
     b.)append the elements stored in the variable list to the empty list earthquakes
@@ -32,6 +31,18 @@ Algorithm:
     a.)output "Sorry File Not Found"
 8.)return the earthquakes list
 
+
+
+Function Name:average_magnitude
+Purpose:find the average of the earthquakes in the file
+Paramaters:earthquakes
+Return:
+Algorithm:
+1.)Open th
+2.)
+3.)
+4.)
+5.)
 
 
 
