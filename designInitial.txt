@@ -38,7 +38,28 @@ Algorithm:
 Function Name:find_earthquakes_on_date
 Purpose: find and otput to a filr all earthquakes that occured on a specific date
 Parameters:the list earthquakes
-Return:
+Return:count
+Algorithm:
+
+1.)Open the output file
+2.)set count equal to zero
+3.)Ask the user to input a specific date to find all earthquakes for, store result in variable earthquake _date
+4.)for i in range of the length of earthquakes:
+    a.)if earthquake_date equals earthquake [i][0]
+          tab
+
+
+
+
+
+def find_nationality(best_actress):
+    count=0
+    nationality= input("Please enter a nationality:")
+    for i in range (len(best_actress)):
+        if nationality.strip().lower() == best_actress[i][4].strip().lower():
+            count+=1
+    return count
+
 
 
  Output to a file (name given by the user) all earthquakes that occurred on a specific date (provided by the user).
