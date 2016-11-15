@@ -1,0 +1,19 @@
+Function Name:read_in_file
+Purpose:read in a file from the user and return it once they give one that exists
+Parameters:None
+Return:filename
+Algorithm:
+
+1.)Ask the user to input a file
+2.)while the file does not exist:
+    a.)ask the user to input a file
+3.)return filename
+
+
+Function Name:process_file
+Purpose:process the file
+Parameters:in
+Return:
+Algorithm:
+
+
