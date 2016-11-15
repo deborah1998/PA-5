@@ -23,8 +23,8 @@ Algorithm:
 1.)try
 2.)Open the input file from the user.
 3.)create an empty list and store it in the variable earthquakes
-5.)for every line in the input  file
-    a.)strip and then  split every element in the line at the comma, store these elements in the variable list
+5.)for every line in the input  file:
+    a.)strip everey element in line  and then  split every element in the line at the comma, store these elements in the variable list
     b.)append the elements stored in the variable list to the empty list earthquakes
 6.)close the input file
 7.)except an error
@@ -39,10 +39,22 @@ Paramaters:earthquakes
 Return:
 Algorithm:
 1.)Open th
-2.)
-3.)
-4.)
-5.)
+2.)Set a  variable named  total  equal to zero
+3.)Set the count equal to zero
+4.)For i in range of the length of earthquakes
+    a.set total equal to the total plus
+
+
+
+
+
+total = 0
+    count = 0
+    for i in range(len(best_actress)):
+        total += int(best_actress[i][3])
+        count += 1
+    average = total/count
+    return average
 
 
 
