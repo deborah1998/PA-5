@@ -1,6 +1,5 @@
 
 
-
 Function Name:read_in_file
 Purpose:read in a file from the user and return it once they give one that exists
 Parameters:None
@@ -86,8 +85,9 @@ Purpose:run the overall program
 Paramaters:none
 Return:none
 Algorithm:
-1.)
-2.)Ask the user to to enter a name for the outputfile name
-3.)
+1.)Output the purpose of the program to the user
+2.)
+3.)Ask the user to to enter a name for the outputfile name stor answer in variable
 4.)
+5.)
 
