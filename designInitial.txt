@@ -10,10 +10,38 @@ Algorithm:
 3.)return filename
 
 
-Function Name:process_file
-Purpose:process the file
+Function Name:read_file
+Purpose:read from the file
 Parameters:filename,outfile_name
-Return:
+Return:none
 Algorithm:
+1.)try
+2.)Open the input file from the user.
+3.)Open the output file that the user names.
+4.)create an empty list and store it in the variable earthquakes
+5.)for every line in the input  file
+    a.)strip and then  split every element in the line at the comma, store these elements in the variable list
+    b.)append the elements stored in the variable list to the empty list earthquakes
+6.)close the input file
+7.)except an error
+    a.)output "Sorry File Not Found"
+8.)return the earthquakes list
 
+
+
+
+
+
+
+
+
+
+    * Output to the user the average magnitude of the earthquakes in the file
+* Output to the user the number of earthquakes within
+ a specific distance of a specific location. Distance is given by user as kilometers,
+ and location is given by user as a latitude and longitude. You must calculate a distance between 2 points based on latitude and longitude.
+  The shortest distance between two given points P1=(lat1, lon1) and P2=(lat2, lon2) can be calculated using the formula distance
+  = arccos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(lon1 - lon2)) * 6371. Note that one of these points comes from the file,
+  and one of these points comes from the user, and if you just copy/paste this equation into Python it WILL NOT work.
+  See requirements below about programming.
 
