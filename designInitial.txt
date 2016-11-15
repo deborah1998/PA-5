@@ -24,7 +24,7 @@ Algorithm:
 2.)Open the input file from the user.
 3.)create an empty list and store it in the variable earthquakes
 5.)for every line in the input  file:
-    a.)strip everey element in line  and then  split every element in the line at the comma, store these elements in the variable list
+    a.)strip every element in line  and then  split every element in the line at the comma, store these elements in the variable list
     b.)append the elements stored in the variable list to the empty list earthquakes
 6.)close the input file
 7.)except an error
@@ -33,9 +33,21 @@ Algorithm:
 
 
 
+
+
+Function Name:find_earthquakes_on_date
+Purpose: find and otput to a filr all earthquakes that occured on a specific date
+Parameters:the list earthquakes
+Return:
+
+
+ Output to a file (name given by the user) all earthquakes that occurred on a specific date (provided by the user).
+
+
+
 Function Name:average_magnitude
 Purpose:find the average of the earthquakes in the file
-Paramaters: the list earhquakes earthquakes
+Paramaters: the list earthquakes
 Return:average magnitude of earthquakes in file
 Algorithm:
 1.)Open the output file that the user names
@@ -61,7 +73,6 @@ Purpo
 
 
 
-    * Output to the user the average magnitude of the earthquakes in the file
 * Output to the user the number of earthquakes within
  a specific distance of a specific location. Distance is given by user as kilometers,
  and location is given by user as a latitude and longitude. You must calculate a distance between 2 points based on latitude and longitude.
