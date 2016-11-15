@@ -12,7 +12,7 @@ Algorithm:
 
 Function Name:process_file
 Purpose:process the file
-Parameters:in
+Parameters:filename,outfile_name
 Return:
 Algorithm:
 
