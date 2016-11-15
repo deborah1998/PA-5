@@ -35,27 +35,24 @@ Algorithm:
 
 Function Name:average_magnitude
 Purpose:find the average of the earthquakes in the file
-Paramaters:earthquakes
-Return:
+Paramaters: the list earhquakes earthquakes
+Return:average magnitude of earthquakes in file
 Algorithm:
-1.)Open th
+1.)Open the output file that the user names
 2.)Set a  variable named  total  equal to zero
 3.)Set the count equal to zero
 4.)For i in range of the length of earthquakes
-    a.set total equal to the total plus
+    a.set total equal to the total plus earthquakes[i][4]
+    b.add one to count
+5.)divide total by count and store the result in the variable average
+6.)print the average to the output file
+7.)return average
+8.)close the output file
 
 
 
-
-
-total = 0
-    count = 0
-    for i in range(len(best_actress)):
-        total += int(best_actress[i][3])
-        count += 1
-    average = total/count
-    return average
-
+Function Name:num_of_earthquakes_in_distance
+Purpo
 
 
 
