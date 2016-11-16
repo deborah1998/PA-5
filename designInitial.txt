@@ -75,8 +75,18 @@ Algorithm:
 
 
 
+Function Name:menu
+Purpose
+Paramaters:none
 
 
+
+
+
+
+Your program must allow the user to choose
+which of the above options they want to do, and after completing the chosen option,
+ must allow the user to choose another option or choose to end the program.
 
 Function Name:main
 Purpose:run the overall program
@@ -85,8 +95,14 @@ Return:none
 Algorithm:
 1.)Output the purpose of the program to the user
 2.)Call the read in file function assign it to a variable called new_file
-2.)Call the read_file function, assign it to a variable called new_list
-3.)Ask the user to to enter a name for the outputfile answer in variable outputfile
+3.)Call the read_file function, assign it to a variable called new_list
+4.)Ask the user to to enter a name for the outputfile answer in variable outputfile
+
+
+
+
+
+
 4.)Call the find_earthquakes_on_date function
 5.)Call the average_magnitude function assign the function to a variable called magnitude
 6.)Output magnitude to the user
