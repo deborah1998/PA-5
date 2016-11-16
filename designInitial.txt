@@ -53,7 +53,7 @@ Algorithm:
 1.)Open the output file that the user names
 2.)Set a  variable named  total  equal to zero
 3.)Set the count equal to zero
-4.)For i in range of the length of earthquakes
+4.)For i in range of the length of earthquakes:
     a.set total equal to the total plus earthquakes[i][4]
     b.add one to count
 5.)divide total by count and store the result in the variable average
@@ -69,13 +69,9 @@ Paramaters: the list earthquakes,outfilename
 Return:
 Algorithm:
 1.)Open the output file that the user names
-2.)
+2.)For i in range of length of earthquakes:
+    a.)
 3.)
-4.)
-
-
-
-
 
 
 
