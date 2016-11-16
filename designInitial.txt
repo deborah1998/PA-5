@@ -47,47 +47,33 @@ Algorithm:
 
 Function Name:average_magnitude
 Purpose:find the average of the earthquakes in the file
-Paramaters: the list earthquakes, outfilename
+Paramaters: the list earthquakes
 Return:average magnitude of earthquakes in file
 Algorithm:
-1.)Open the output file that the user names
-2.)Set a  variable named  total  equal to zero
-3.)Set the count equal to zero
-4.)For i in range of the length of earthquakes:
-    a.set total equal to the total plus earthquakes[i][4]
+1.)Set a  variable named  total  equal to zero
+2.)Set the count equal to zero
+3.)For i in range of the length of earthquakes:
+    a.set total equal to the total plus earthquakes[i][4](typecast to an integer)
     b.add one to count
-5.)divide total by count and store the result in the variable average
-6.)print the average to the output file
-7.)return average
-8.)close the output file
+4.)divide total by count and store the result in the variable average
+5.)print the average to the output file
+6.)return average
+7.)close the output file
 
 
 
 Function Name:num_of_earthquakes_in_distance
 Purpose:To find the number of earthquakes within a specific distance of a specific location
-Paramaters: the list earthquakes,outfilename
+Paramaters: the list earthquakes
 Return:
 Algorithm:
-1.)Open the output file that the user names
-2.)Ask the user to input a latitude a store answer in the variable lat1
-3.)Ask the user to input a longitude and store answer in the variable lon1
-4.)For i in range of length of earthquakes:
+1.)Ask the user to input a latitude a store answer in the variable lat1
+2.)Ask the user to input a longitude and store answer in the variable lon1
+3.)For i in range of length of earthquakes:
     a.perform the calculation arcos(sin(lat1)*sin(int(earthquakes[1])) + cos(lat1) * cos(earthquakes[1]) * cos(lon1 - earthquakes[2])) * 6371
-    *typecast list values to integers
-5.)
-
-
-
-
-
-P1=(lat1, lon1) and P2=(lat2, lon2) can be calculated using the formula distance
-  = arccos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(lon1 - lon2)) * 6371
-
-
-
-
-
-
+    *typecast list values to integers store the result in a variable named distance calculation
+4.)print distance calculation to thr output file
+5.)close the file
 
 
 
@@ -99,8 +85,10 @@ Paramaters:none
 Return:none
 Algorithm:
 1.)Output the purpose of the program to the user
-2.)Call the read from file function
+2.)Call the read in file function
+2.)Call the read_file function
 3.)Ask the user to to enter a name for the outputfile answer in variable outputfile
-4.)
-5.)
+4.)Call the find_earthquakes_on_date
+5.)Call the average_magnitude function
+6.) Call the num_of_earthquakes_in_distance function
 
