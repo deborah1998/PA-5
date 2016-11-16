@@ -32,22 +32,22 @@ Algorithm:
 
 Function Name:find_earthquakes_on_date
 Purpose: find and output to a file all earthquakes that occured on a specific date
-Parameters:the list earthquakes
+Parameters:the list earthquakes,outfilename
 Return:none
 Algorithm:
 
 1.)Open the output file
 2.)Ask the user to input a specific date to find all earthquakes for, store result in variable earthquake _date
 3.)for i in range of the length of earthquakes:
-    a.)if earthquake_date equals earthquake [i][0]
-          i)print earthquake [i][0] to the output file
+    a.)if earthquake_date equals earthquake[0](the first element in the list being the date)
+          i)print earthquake[0:9](everything from the first to last element of list)
 4.)close the output file
 
 
 
 Function Name:average_magnitude
 Purpose:find the average of the earthquakes in the file
-Paramaters: the list earthquakes
+Paramaters: the list earthquakes, outfilename
 Return:average magnitude of earthquakes in file
 Algorithm:
 1.)Open the output file that the user names
@@ -65,10 +65,10 @@ Algorithm:
 
 Function Name:num_of_earthquakes_in_distance
 Purpose:To find the number of earthquakes within a specific distance of a specific location
-Paramaters:
+Paramaters: the list earthquakes,outfilename
 Return:
 Algorithm:
-1.)
+1.)Open the output file that the user names
 2.)
 3.)
 4.)
@@ -86,8 +86,8 @@ Paramaters:none
 Return:none
 Algorithm:
 1.)Output the purpose of the program to the user
-2.)
-3.)Ask the user to to enter a name for the outputfile name stor answer in variable
+2.)Call the read from file function
+3.)Ask the user to to enter a name for the outputfile answer in variable outputfile
 4.)
 5.)
 
