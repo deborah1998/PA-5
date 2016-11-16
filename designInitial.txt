@@ -69,9 +69,26 @@ Paramaters: the list earthquakes,outfilename
 Return:
 Algorithm:
 1.)Open the output file that the user names
-2.)For i in range of length of earthquakes:
-    a.)
-3.)
+2.)Ask the user to input a latitude a store answer in the variable lat1
+3.)Ask the user to input a longitude and store answer in the variable lon1
+4.)For i in range of length of earthquakes:
+    a.perform the calculation arcos(sin(lat1)*sin(int(earthquakes[1])) + cos(lat1) * cos(earthquakes[1]) * cos(lon1 - earthquakes[2])) * 6371
+    *typecast list values to integers
+5.)
+
+
+
+
+
+P1=(lat1, lon1) and P2=(lat2, lon2) can be calculated using the formula distance
+  = arccos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(lon1 - lon2)) * 6371
+
+
+
+
+
+
+
 
 
 
