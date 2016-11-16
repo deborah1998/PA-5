@@ -101,9 +101,6 @@ Algorithm:
 
 
 
-Your program must allow the user to choose
-which of the above options they want to do, and after completing the chosen option,
- must allow the user to choose another option or choose to end the program.
 
 Function Name:main
 Purpose:run the overall program
