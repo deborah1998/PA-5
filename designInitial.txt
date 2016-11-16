@@ -26,6 +26,7 @@ Algorithm:
 6.)close the input file
 7.)except an error
     a.)output "Sorry File Not Found"
+    b.)end the program
 8.)return the earthquakes list
 
 
@@ -79,18 +80,23 @@ Parameters:None
 Return:chosen menu option
 Algorithm:
 1.)Tell the user their options for what they want to be done using information about earthquakes
-2.)Ask the user to input what information they would like to know about earthquakes
+2.)Ask the user to input what information they would like to know about earthquakes store result in choice
 3.)if choice is dates of earthquakes:
     a.)Call the find_earthquakes_on_date function
 4.)if choice is average magnitude
     a.)Call the average_magnitude function and assign the function to a variable called magnitude
     b.)Output magnitude to the user
-5.) while choice is distance of earthquakes:
+5.)if choice is distance of earthquakes:
    a.)Call the num_of_earthquakes_in_distance function asssign the functon to a variable called earthquake_distances
    b.)Output earthquake_distances to the user
 6.)otherwise:
     a.)ouput"This is an invalid choice"
-
+7.)Ask the user if they want to choose another option store result in user answer otherwise type in the sentinel value to end the program
+8.)while user answer is not yes and is not no:
+    a.Ouput this is invailid option
+    b.)Ask the user if they want to choose another option store result in user answer
+9.)while answer is yes and not the sentininel value to end the program
+    a.)Ask the user to input what information they would like to know about earthquakes store result in choice
 
 
 
@@ -115,8 +121,6 @@ Algorithm:
 
 
 
-7.)Call the num_of_earthquakes_in_distance function asssign the functon to a variable called earthquake_distances
-8.)Output earthquake disatnces to the user
 
 
 
