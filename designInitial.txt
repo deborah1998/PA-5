@@ -56,8 +56,7 @@ Algorithm:
     a.set total equal to the total plus earthquakes[i][4](typecast to an integer)
     b.add one to count
 4.)divide total by count and store the result in the variable average
-5.)print the average to the output file
-6.)return average
+5.)return average
 
 
 
@@ -85,10 +84,16 @@ Paramaters:none
 Return:none
 Algorithm:
 1.)Output the purpose of the program to the user
-2.)Call the read in file function
-2.)Call the read_file function
+2.)Call the read in file function assign it to a variable called new_file
+2.)Call the read_file function, assign it to a variable called new_list
 3.)Ask the user to to enter a name for the outputfile answer in variable outputfile
-4.)Call the find_earthquakes_on_date
-5.)Call the average_magnitude function
-6.)Call the num_of_earthquakes_in_distance function
+4.)Call the find_earthquakes_on_date function
+5.)Call the average_magnitude function assign the function to a variable called magnitude
+6.)Output magnitude to the user
+7.)Call the num_of_earthquakes_in_distance function asssign the functon to a variable called earthquake_distances
+8.)Output earthquake disatnces to the user
+
+
+
+
 

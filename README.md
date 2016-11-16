@@ -50,7 +50,9 @@ Your program must allow the user to choose
 which of the above options they want to do, and after completing the chosen option,
  must allow the user to choose another option or choose to end the program.
 
-Your program should have good error checking so that it doesn't crash. Some examples you need to consider: file name checking, try/except in file processing functions, and checking that input by the user is appropriate for the data they are supposed to be inputting (type or value).
+Your program should have good error checking so that it doesn't crash. Some examples you need to consider: file name checking,
+try/except in file processing functions, a
+nd checking that input by the user is appropriate for the data they are supposed to be inputting (type or value).
 
 ## DESIGN
 The second stage is to design your solution based on the requirements:
