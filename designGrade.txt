@@ -1,0 +1,26 @@
+PA5 Design Grading
+Grade: 8.1/10
+
+[1/1]Properly reads from any file of the given format, with the name given by the user, and stores in a list
+
+[0.5/1]Incorporates all expected error checking (file, user input)
+* Missing error checking on values of user input (lat, lon, distance, date)
+
+[1.9/2]Outputs to a file all earthquakes from a specific date
+* need better formatted file output
+* be careful about comparing dates
+* user chooses file name
+
+[1.95/2]Finds and outputs average magnitude
+* is magnitude an integer?
+
+[1/2]Determines number of earthquakes within a specific distance of a location
+* need user to input distance
+* need to compare distances to determine if the distance is within the one given by the user and increase count
+* are any of these values actually integers?
+
+[0.75/1]Functions make sense
+* user input should never be in a calculation function. Instead pass it as a parameter.
+
+[0.9/1] User has a menu that lets them also keep going until they choose to quit
+* need to design loop so the code runs again based on their choice.
