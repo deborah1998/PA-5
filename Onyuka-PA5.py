@@ -92,10 +92,14 @@ def menu():
 
 def main():
 
-    print("The purpose of this program is to analyze earthquaked dated based on your choice")
+    print("The purpose of this program is to analyze earthquake data based on your choice")
     new_file=file_reader()
     new_list=read_file(new_file)
 
+    menu()
+
+
+main()
 
 
 
