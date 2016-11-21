@@ -26,6 +26,7 @@ def read_file(filename):
         for line in inputfile:
             list = line.strip().split(",")
             earthquakes.append(list)
+            earthquakes[0].split["T"]
         inputfile.close()
     except:FileNotFoundError
     print("Sorry this file is not Found")
@@ -45,7 +46,7 @@ def find_earthquakes_on_date(outfile_name,earthquakes):
     year=input("Please enter a specific year(yyyy)")
     earthquake_date=(month+"-"+day+"-"+year)
     for i in range (len(earthquakes)):
-        if earthquake_date == earthquakes[0]:
+        if earthquake_date == earthquakes[0][0]:
             print(earthquakes[0:9], file =outputfile)
         else:
             print("This is an invalid date!")
@@ -71,10 +72,14 @@ def average_magnitude (earthquakes):
 #Paramaters: the list earthquakes
 #Return:distance calculation
 
-def num_of_earthquakes_in_distance():
-    lat1=input("Please enter a specific latitude")
-    lon1=input("Please enter a specific longitude")
-    user_distance=("Please enter a specific distance")
+def num_of_earthquakes_in_distance(earthquakes):
+    lat1=input("Please enter a specific latitude:")
+    lon1=input("Please enter a specific longitude:")
+    for i in range(len(earthquakes)):
+        distance =math.acos(math.sin(lat1) * math.sin(int(earthquakes[1])) + math.cos(lat1) * math.cos(earthquakes[1]) * math.cos(lon1 - earthquakes[2])) * 6371
+    return distance
+
+
 
 
 
