@@ -72,12 +72,15 @@ def average_magnitude (earthquakes):
 #Paramaters: the list earthquakes
 #Return:distance calculation
 
-def num_of_earthquakes_in_distance(earthquakes):
-    lat1=input("Please enter a specific latitude:")
-    lon1=input("Please enter a specific longitude:")
+def num_of_earthquakes_in_distance(earthquakes,lat1,lon1 ):
     for i in range(len(earthquakes)):
-        distance =math.acos(math.sin(lat1) * math.sin(int(earthquakes[1])) + math.cos(lat1) * math.cos(earthquakes[1]) * math.cos(lon1 - earthquakes[2])) * 6371
+        distance =(math.acos(math.sin(lat1) * math.sin(int(earthquakes[1])) + math.cos(lat1) * math.cos(earthquakes[1]) * math.cos(lon1 - earthquakes[2])) * 6371)
     return distance
+
+
+def menu():
+    print("The  choices ")
+
 
 
 
