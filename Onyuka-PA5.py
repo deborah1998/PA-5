@@ -14,6 +14,12 @@ def file_reader():
     return file_name
 
 
+#Function Name:read_file
+#Purpose:read from the file
+#Parameters:filename
+#Return:earthquakes list
+
+
 def read_file(filename):
     try:
         inputfile=open(filename,"r")
@@ -22,14 +28,23 @@ def read_file(filename):
         for line in inputfile:
             list = line.strip().split(",")
             earthquakes.append(list)
-
-
-
-
-
-
         inputfile.close()
     except:FileNotFoundError
     print("Sorry this file is not Found")
     SystemExit(1)
     return earthquakes
+
+
+def find_earthquakes_on_date(outfile_name,earthquakes):
+    outputfile=open(outfile_name)
+    earthquake_date=("Please enter a specific date in which the program will find all earthquakes for")
+    for i in len(earthquakes):
+
+
+
+
+
+
+    outputfile.close()
+
+
