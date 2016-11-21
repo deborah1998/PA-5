@@ -38,7 +38,12 @@ def read_file(filename):
 def find_earthquakes_on_date(outfile_name,earthquakes):
     outputfile=open(outfile_name)
     earthquake_date=("Please enter a specific date in which the program will find all earthquakes for")
-    for i in len(earthquakes):
+    for i in range (len(earthquakes)):
+        if earthquake_date == earthquake[0]:
+
+
+
+    outputfile.close()
 
 
 
