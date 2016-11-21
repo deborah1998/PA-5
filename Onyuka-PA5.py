@@ -92,7 +92,8 @@ def menu():
 
 def main():
 
-
+    print("The purpose of this program is to analyze earthquaked dated based on your choice")
+    new_file=read_file(new_file)
 
 
 
