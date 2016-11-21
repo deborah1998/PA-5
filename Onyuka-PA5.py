@@ -14,7 +14,19 @@ def file_reader():
     return file_name
 
 
+def read_file(filename):
+    try:
+        inputfile=open(filename,"r")
+        earthquakes=[]
+        for line in inputfile:
 
 
 
 
+
+
+        inputfile.close()
+    except:FileNotFoundError
+    print("Sorry this file is not Found")
+    SystemExit(1)
+    return earthquakes
