@@ -80,6 +80,7 @@ def num_of_earthquakes_in_distance(earthquakes,lat1,lon1 ):
 
 def menu():
     print("The  choices ")
+    choice = input("What would you like to know about earthquakes?")
 
 
 
