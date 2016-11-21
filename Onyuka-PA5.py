@@ -79,8 +79,13 @@ def num_of_earthquakes_in_distance(earthquakes,lat1,lon1 ):
 
 
 def menu():
-    print("The  choices ")
+    print("The  choices you have to choose from to laern more about earthquakes is dates, magnitude, and distance")
     choice = input("What would you like to know about earthquakes?")
+    if choice.lower == "dates":
+        find_earthquakes_on_date()
+    elif choice.lower
+
+
 
 
 
