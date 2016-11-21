@@ -54,7 +54,7 @@ Algorithm:
 1.)Set a  variable named  total  equal to zero
 2.)Set the count equal to zero
 3.)For i in range of the length of earthquakes:
-    a.set total equal to the total plus earthquakes[i][4](typecast to an integer)
+    a.set total equal to the total plus earthquakes[i][4](typecast to a float)
     b.add one to count
 4.)divide total by count and store the result in the variable average
 5.)return average

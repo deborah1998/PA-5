@@ -1,6 +1,4 @@
-
-
-
+import math
 import os
 # Purpose: read in a file from the user and return it once they give one that exists
 # Parameters: None
@@ -41,17 +39,16 @@ def read_file(filename):
 
 
 def find_earthquakes_on_date(outfile_name,earthquakes):
-    outputfile=open(outfile_name)
-    print("")
-    month=input("Please enter a specific month(two digits)")
-    day=input("Please enter a specific day(two digis)")
-    year=input("Please enter a specific year(four digits)")
+    outputfile=open(outfile_name,"w")
+    month=input("Please enter a specific month(mm)")
+    day=input("Please enter a specific day(dd)")
+    year=input("Please enter a specific year(yyyy)")
     earthquake_date=(month+"-"+day+"-"+year)
     for i in range (len(earthquakes)):
         if earthquake_date == earthquakes[0]:
-            print(earthquakes[0:9])
+            print(earthquakes[0:9], file =outputfile)
         else:
-            print("This is an invalid date")
+            print("This is an invalid date!")
     outputfile.close()
 
 #Function Name:average_magnitude
@@ -60,10 +57,24 @@ def find_earthquakes_on_date(outfile_name,earthquakes):
 #Return:average magnitude of earthquakes in file
 
 def average_magnitude (earthquakes):
+    total=0
+    count=0
+    for i in range(len(earthquakes)):
+        total=float(total+earthquakes[i][4])
+        count+=1
+        average = total/count
+        return average
 
 
+#Function Name:num_of_earthquakes_in_distance
+#Purpose:To find the number of earthquakes within a specific distance of a specific location
+#Paramaters: the list earthquakes
+#Return:distance calculation
 
-
+def num_of_earthquakes_in_distance():
+    lat1=input("Please enter a specific latitude")
+    lon1=input("Please enter a specific longitude")
+    user_distance=("Please enter a specific distance")
 
 
 
