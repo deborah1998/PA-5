@@ -83,7 +83,8 @@ def menu():
     choice = input("What would you like to know about earthquakes?")
     if choice.lower == "dates":
         find_earthquakes_on_date()
-    elif choice.lower
+    if choice.lower =="magnitude":
+
 
 
 
