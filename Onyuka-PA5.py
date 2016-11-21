@@ -17,8 +17,11 @@ def file_reader():
 def read_file(filename):
     try:
         inputfile=open(filename,"r")
+        list=[]
         earthquakes=[]
         for line in inputfile:
+            list = line.strip().split(",")
+            earthquakes.append(list)
 
 
 
