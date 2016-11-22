@@ -1,0 +1,37 @@
+TestCases:
+
+1.)Description:If the user chooses the first option (dates)
+
+
+
+
+
+
+
+2.)Description: if the user chooses the second option (magnitude)
+
+
+
+
+
+
+3.)Description:if the user chooses the third option (distance)
+
+
+
+
+
+4.)Description:if the user inputs an invalid filename
+Input for inputfile:bdfjdhfb.txt
+Output:
+
+
+
+
+
+
+
+
+
+
+

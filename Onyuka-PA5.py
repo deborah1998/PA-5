@@ -123,10 +123,10 @@ def main():
         user_distance = ("Please enter a specific distance:")
         num_distance = num_of_earthquakes_in_distance(new_list, lat1, lon1, user_distance)
         print("The number of earthquakes within that distance is",num_distance)
-choice2 = input("Would you like to choose another option?")
-while choice2.lower == "yes" and choice2.lower!= "no":
-    input("Would you like to choose another option?")
-    choice2=menu()
+        choice2 = input("Would you like to choose another option?")
+        while choice2.lower == "yes" and choice2.lower!= "no":
+            input("Would you like to choose another option?")
+            choice2=menu()
 
 
 main()
