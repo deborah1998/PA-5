@@ -94,7 +94,9 @@ def main():
 
     print("The purpose of this program is to analyze earthquake data based on your choice")
     new_file=file_reader()
-    read_file(new_file)
+    new_list =read_file(new_file)
+    avg_magnitude = round(average_magnitude(new_list))
+    print(avg_magnitude)
 
 
     menu()
