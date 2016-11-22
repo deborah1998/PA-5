@@ -3,4 +3,8 @@ assignment especially when it came to the while loop we were supposed to incorpo
 earthquakes.I found this especially difficult considering we had to have a menu function in our code and somehow take that into consideration when
 it came to writing the for loop.I additionally had many problems with the calculation functions as I  kept getting a type error in my code as I tried
 to convert the entire equation to a float value or when I tried converting certain aspects of the earthquakes list to an integer. I also had problems
-with getting my program to write toa file although i think i set up a pretty good and standard file format and incoroprated it into the earthquake date function.
+with getting my program to write toa file although I think I set up a pretty good and standard file format and incoroprated it into the earthquake date function.
+I found it extremley frustrating trying to rectify my code and having various errors output to the console.I wasnt very satisfied with my coding and i found myself
+getting confused on things that i was initally good on, i found it difficult to follow my algoorithms so i consulted my notes and listened over at
+previous panapto rectordings from the class and referred to my textbook howeve I  did find myself getting stuck when it came to my  error checking and
+the syntax of my code especially when it came to the calculations involved with the assignment.
