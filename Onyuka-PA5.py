@@ -29,7 +29,7 @@ def read_file(file_name):
         list=[]
         for line in inputfile:
             earthquakes.append(line.strip().split(","))
-            list.append(earthquakes[0].split["T"])
+            list.append(earthquakes[0].split("T"))
         inputfile.close()
     except FileNotFoundError:
         print("Sorry this file is not Found")
