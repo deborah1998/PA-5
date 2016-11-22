@@ -14,8 +14,6 @@ Output(to a file):
 
 
 
-
-
 2.)Description: if the user chooses the second option (magnitude)
 
 
@@ -27,7 +25,7 @@ Output(to a file):
 Input for file:testfile.txt
 Input for choice:distance
 Input for latitude:49.5
-
+Input for lingitude:100
 
 
 
