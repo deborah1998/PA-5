@@ -1,0 +1,6 @@
+This programming assignment  was extremley difficult for me to understand this week.What I  had most trouble with this week was the error checking part of the programming
+assignment especially when it came to the while loop we were supposed to incorportate to determine if the user wanted to continue to find out more about
+earthquakes.I found this especially difficult considering we had to have a menu function in our code and somehow take that into consideration when
+it came to writing the for loop.I additionally had many problems with the calculation functions as I  kept getting a type error in my code as I tried
+to convert the entire equation to a float value or when I tried converting certain aspects of the earthquakes list to an integer. I also had problems
+with getting my program to write toa file although i think i set up a pretty good and standard file format and incoroprated it into the earthquake date function.
