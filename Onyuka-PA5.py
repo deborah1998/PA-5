@@ -107,7 +107,7 @@ def main():
     choice=menu()
     if choice.lower() == "dates":
         outputfile = input("Please enter the name of the output file:")
-        find_earthquakes_on_date(new_list,outputfile)
+        find_earthquakes_on_date(outputfile,new_list)
     if choice.lower() =="magnitude":
         avg_mag=average_magnitude(new_list)
         print("The average magnitude of the earthquakes",avg_mag)

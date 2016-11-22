@@ -1,6 +1,14 @@
 TestCases:
 
 1.)Description:If the user chooses the first option (dates)
+Input for file:tesfile.txt
+Input for choice:dates
+Name of outputfile:outfile.txt
+Input for specific month:10
+Input for specific day:14
+Input for specific year:2016
+Output(to a file):
+
 
 
 
@@ -16,6 +24,10 @@ TestCases:
 
 
 3.)Description:if the user chooses the third option (distance)
+Input for file:testfile.txt
+Input for choice:distance
+Input for latitude:49.5
+
 
 
 
