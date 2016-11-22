@@ -9,11 +9,11 @@ import os
 # Return: file_name
 def file_reader():
     #ask user for input
-    filename = input("Please enter the file you would like to input: ")
+    file_name = input("Please enter the file you would like to input:")
     #if input is invalid ask again
-    while not os.path.exists(filename):
-        filename = input("Invalid Input! Please enter the file you would like to input: ")
-    return filename
+    while not os.path.exists(file_name):
+        file_name = input("Invalid Input! Please enter the file you would like to input: ")
+    return file_name
 
 
 #Function Name:read_file
@@ -22,9 +22,9 @@ def file_reader():
 #Return:earthquakes list
 
 
-def read_file(filename):
+def read_file(file_name):
     try:
-        inputfile=open(filename,"r")
+        inputfile=open(file_name,"r")
         list=[]
         earthquakes=[]
         for line in inputfile:
