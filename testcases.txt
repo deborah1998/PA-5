@@ -15,7 +15,9 @@ Output(to a file):
 
 
 2.)Description: if the user chooses the second option (magnitude)
-
+Input for file:testfile.txt
+Input for choice:magnitude
+Output:the average magnitude from the input file
 
 
 
@@ -24,9 +26,9 @@ Output(to a file):
 3.)Description:if the user chooses the third option (distance)
 Input for file:testfile.txt
 Input for choice:distance
-Input for latitude:49.5
-Input for lingitude:100
-
+Input for latitude:49.5(flat variable type)
+Input for longitude:100
+Ouput:result from distance calculation
 
 
 
