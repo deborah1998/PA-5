@@ -91,29 +91,26 @@ def menu():
 
 
 
-
-
 def main():
 
     print("The purpose of this program is to analyze earthquake data based on your choice")
     new_file=file_reader()
     new_list =read_file(new_file)
-    print(avg_mag)
-    lat1 = input("Please enter a specific latitude: ")
-    lon1=input("Please enter a specific longitude:")
-    user_distance=("Please enter a specific distance:")
-    choice2 = input("Would you like to choose another option?")
+
     menu()
-    if choice2.lower == "dates":
-        earth_dates =find_earthquakes_on_date(outfile_name,earthquakes)
-    if choice2.lower =="magnitude":
-        avg_mag=average_magnitude(earthquakes)
-    if choice2.lower == "distance":
-        num_distance = num_of_earthquakes_in_distance(earthquakes,lat1,lon1,user_distance)
-        print(num_distance)
+    if choice.lower() == "dates":
+        earth_dates =find_earthquakes_on_date(outfile_name,new_list)
         print(earth_dates)
+    if choice2.lower =="magnitude":
+        avg_mag=average_magnitude(new_list)
         print(avg_mag)
+    if choice2.lower == "distance":
+        lat1 = input("Please enter a specific latitude: ")
+        lon1 = input("Please enter a specific longitude:")
+        user_distance = ("Please enter a specific distance:")
+        num_distance = num_of_earthquakes_in_distance(new_list, lat1, lon1, user_distance)
         print(num_distance)
+    choice2 = input("Would you like to choose another option?")
     while choice2.lower == "yes":
         choice2 = input("Would you like to choose another option?")
         menu()
