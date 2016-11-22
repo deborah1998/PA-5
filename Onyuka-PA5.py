@@ -9,11 +9,11 @@ import os
 # Return: file_name
 def file_reader():
     #ask user for input
-    file_name = input("Please enter the file you would like to input: ")
+    filename = input("Please enter the file you would like to input: ")
     #if input is invalid ask again
-    while not os.path.exists(file_name):
-        file_name = input("Invalid Input! Please enter the file you would like to input: ")
-    return file_name
+    while not os.path.exists(filename):
+        filename = input("Invalid Input! Please enter the file you would like to input: ")
+    return filename
 
 
 #Function Name:read_file
@@ -86,7 +86,7 @@ def num_of_earthquakes_in_distance(earthquakes,lat1,lon1,user_distance ):
 
 
 def menu():
-    print("The  choices you have to choose from to laern more about earthquakes is dates, magnitude, and distance")
+    print("The choices you have to choose from to learn more about earthquakes is dates, magnitude, and distance")
     choice = input("What would you like to know about earthquakes?")
     if choice.lower == "dates":
         earth_dates =find_earthquakes_on_date()
