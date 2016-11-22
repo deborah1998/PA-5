@@ -49,7 +49,7 @@ def find_earthquakes_on_date(outfile_name,earthquakes):
     for i in range (len(earthquakes)):
         if earthquake_date == earthquakes[0]:
             print(earthquakes[0:9], file =outputfile)
-    outputfile.close()
+            outputfile.close()
 
 
 
@@ -119,15 +119,15 @@ def main():
             lat1 = float(input("Please enter a specific latitude: "))
         lon1 = float(input("Please enter a specific longitude:"))
         while lon1 < -180 or lon1 > 180:
-            print("This is invalid output!")
+            print("This is invalid input!")
             lon1 = float(input("Please enter a specific longitude:"))
         user_distance = ("Please enter a specific distance:")
         num_distance = num_of_earthquakes_in_distance(new_list, lat1, lon1, user_distance)
         print("The number of earthquakes within that distance is",num_distance)
-    choice2 = input("Would you like to choose another option?")
-    while choice2.lower == "yes" and choice2.lower!= "no":
-        input("Would you like to choose another option?")
-        choice2=menu()
+choice2 = input("Would you like to choose another option?")
+while choice2.lower == "yes" and choice2.lower!= "no":
+    input("Would you like to choose another option?")
+    choice2=menu()
 
 
 main()
