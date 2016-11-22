@@ -93,6 +93,8 @@ def menu():
 
 
 
+
+
 def main():
 
     print("The purpose of this program is to analyze earthquake data based on your choice")
@@ -102,7 +104,9 @@ def main():
 
 
     menu()
-
+    choice2 = input("Would you like to choose another option?")
+    while choice2.lower == "yes":
+        menu()
 
 main()
 
