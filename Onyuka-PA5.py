@@ -95,19 +95,19 @@ def main():
     new_file=file_reader()
     new_list =read_file(new_file)
     choice=menu()
-    if choice.lower == "dates":
+    if choice.lower() == "dates":
         outfile_name = input("Please enter the name of the output file:")
         earth_dates =find_earthquakes_on_date(outfile_name,new_list)
         print(earth_dates)
-    if choice.lower =="magnitude":
+    if choice.lower() =="magnitude":
         avg_mag=average_magnitude(new_list)
-        print(avg_mag)
-    if choice.lower == "distance":
+        print("The average magnitude of the earthquakes",avg_mag)
+    if choice.lower() == "distance":
         lat1 = input("Please enter a specific latitude: ")
         lon1 = input("Please enter a specific longitude:")
         user_distance = ("Please enter a specific distance:")
         num_distance = num_of_earthquakes_in_distance(new_list, lat1, lon1, user_distance)
-        print(num_distance)
+        print("The number of earthquakes within that distance is",num_distance)
     choice2= input("Would you like to choose another option?")
     while choice2.lower == "yes":
         choice2 = input("Would you like to choose another option?")
