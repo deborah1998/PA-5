@@ -50,7 +50,7 @@ def find_earthquakes_on_date(outfile_name,earthquakes):
         if earthquake_date == earthquakes[0][0]:
             print(earthquakes[0:9], file =outputfile)
     outputfile.close()
-    return earthquake_date
+
 
 #Function Name:average_magnitude
 #Purpose:find the average of the earthquakes in the file
@@ -94,10 +94,10 @@ def main():
     new_file=file_reader()
     new_list =read_file(new_file)
     choice=menu()
+
     if choice.lower() == "dates":
         outfile_name = input("Please enter the name of the output file:")
-        earth_dates =find_earthquakes_on_date(outfile_name,new_list)
-        print(earth_dates)
+        find_earthquakes_on_date(outfile_name,new_list)
     if choice.lower() =="magnitude":
         avg_mag=average_magnitude(new_list)
         print("The average magnitude of the earthquakes",avg_mag)
@@ -107,11 +107,12 @@ def main():
         user_distance = ("Please enter a specific distance:")
         num_distance = num_of_earthquakes_in_distance(new_list, lat1, lon1, user_distance)
         print("The number of earthquakes within that distance is",num_distance)
-
-    choice2 = input("Would you like to choose another option?")
-    while choice2.lower == "yes":
         choice2 = input("Would you like to choose another option?")
-        menu()
+        while choice2.lower == "yes" and choice2.lower!= "no":
+            choice2 = input("Would you like to choose another option?")
+            menu()
+
+
 
 main()
 
