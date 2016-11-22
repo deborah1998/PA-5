@@ -89,9 +89,11 @@ def menu():
     print("The  choices you have to choose from to laern more about earthquakes is dates, magnitude, and distance")
     choice = input("What would you like to know about earthquakes?")
     if choice.lower == "dates":
-        find_earthquakes_on_date()
+        earth_dates =find_earthquakes_on_date()
+        print(earth_dates)
     if choice.lower =="magnitude":
-        average_magnitude()
+        avg_mag=average_magnitude()
+        print(avg_mag)
     if choice.lower == "distance":
         num_of_earthquakes_in_distance()
 
@@ -110,7 +112,7 @@ def main():
     choice2 = input("Would you like to choose another option?")
     while choice2.lower == "yes":
         choice2 = input("Would you like to choose another option?")
-    menu()
+        menu()
 
 
 
