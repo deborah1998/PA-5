@@ -26,14 +26,14 @@ def read_file(file_name):
     try:
         inputfile=open(file_name,"r")
         earthquakes=[]
+        list=[]
         for line in inputfile:
-            list = line.strip().split(",")
-            earthquakes.append(list)
-            earthquakes[0].split["T"]
+            earthquakes.append(line.strip().split(","))
+            list.append(earthquakes[0].split["T"])
         inputfile.close()
-    except:FileNotFoundError
-    print("Sorry this file is not Found")
-    SystemExit(1)
+    except FileNotFoundError:
+        print("Sorry this file is not Found")
+        SystemExit(1)
     return earthquakes
 
 #Function Name:find_earthquakes_on_date
@@ -88,13 +88,15 @@ def menu():
     print("The choices you have to choose from to learn more about earthquakes is dates, magnitude, and distance")
     choice = input("What would you like to know about earthquakes?")
     if choice.lower == "dates":
-        earth_dates =find_earthquakes_on_date()
+        earth_dates =find_earthquakes_on_date(outfile_name,earthquakes)
         print(earth_dates)
     if choice.lower =="magnitude":
-        avg_mag=average_magnitude()
+        avg_mag=average_magnitude(earthquakes)
         print(avg_mag)
     if choice.lower == "distance":
-        num_of_earthquakes_in_distance()
+        num_distance = num_of_earthquakes_in_distance(earthquakes,lat1,lon1,user_distance)
+        print(num_distance)
+    return choice
 
 
 
@@ -105,10 +107,13 @@ def main():
     print("The purpose of this program is to analyze earthquake data based on your choice")
     new_file=file_reader()
     new_list =read_file(new_file)
-
-
+    print(avg_mag)
     menu()
+    lat1 = input("Please enter a specific latitude: ")
+    lon2=input("Please enter a specific longitude:")
+    user_distance=("Please enter a specific distance:")
     choice2 = input("Would you like to choose another option?")
+    print(num_distances)
     while choice2.lower == "yes":
         choice2 = input("Would you like to choose another option?")
         menu()
