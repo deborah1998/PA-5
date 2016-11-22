@@ -1,5 +1,12 @@
 
-
+# Programmer:Deborah Onyuka
+# Course:CS201.01T, Dr. Olsen
+# Date:[11/20/2016)
+# Programming Assignment:PA5
+# Problem Statement:Create a program that will determine certain information about earthquakes and output that info to the user.
+# Data In:A quakes.csv
+# Data Out: dates in outputfile,average magnitude and sepecific distance within earthquakes (dependent in coice)
+# Credits:Class Notes  on functions and while loops
 
 
 import math
