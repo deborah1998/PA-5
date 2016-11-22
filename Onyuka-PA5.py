@@ -76,7 +76,7 @@ def average_magnitude (earthquakes):
 def num_of_earthquakes_in_distance(earthquakes,lat1,lon1,user_distance ):
     count=0
     for i in range(len(earthquakes)):
-        distance =float(math.acos(math.sin(lat1) * math.sin(int(earthquakes[1])) + math.cos(lat1) * math.cos(earthquakes[1]) * math.cos(lon1 - earthquakes[2])) * 6371)
+        distance =float(math.acos(math.sin(lat1) * math.sin(earthquakes[1]) + math.cos(lat1) * math.cos(earthquakes[1]) * math.cos(lon1 - earthquakes[2])) * 6371)
         if distance <= user_distance:
             count+=1
     return count
@@ -104,11 +104,11 @@ def main():
         print("The average magnitude of the earthquakes",avg_mag)
     if choice.lower() == "distance":
         lat1 = float(input("Please enter a specific latitude: "))
-        while lat1 <-90 or lat1 <90:
+        while lat1 < -90 or lat1 > 90:
             print("This is ivalid input!")
             lat1 = float(input("Please enter a specific latitude: "))
         lon1 = float(input("Please enter a specific longitude:"))
-        while lon1 < -180 or lon1 < 180:
+        while lon1 < -180 or lon1 > 180:
             print("This is invalid output!")
             lon1 = float(input("Please enter a specific longitude:"))
         user_distance = ("Please enter a specific distance:")
