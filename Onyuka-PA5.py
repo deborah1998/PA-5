@@ -50,7 +50,7 @@ def find_earthquakes_on_date(outfile_name,earthquakes):
         if earthquake_date == earthquakes[0]:
             print(earthquakes[0:9], file =outputfile)
     outputfile.close()
-    return outputfile
+
 
 
 #Function Name:average_magnitude
@@ -82,11 +82,21 @@ def num_of_earthquakes_in_distance(earthquakes,lat1,lon1,user_distance ):
     return count
 
 
+#Function Name:Menu
+#Parameters:None
+#Return:chosen menu option
+
 def menu():
     print("The choices you have to choose from to learn more about earthquakes is dates, magnitude, and distance")
     choice = input("What would you like to know about earthquakes?")
     return choice
 
+
+
+#Function Name:main
+#Purpose:run the overall program
+#Paramaters:none
+#Return:none
 
 
 def main():
