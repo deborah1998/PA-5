@@ -25,7 +25,6 @@ def file_reader():
 def read_file(file_name):
     try:
         inputfile=open(file_name,"r")
-        list=[]
         earthquakes=[]
         for line in inputfile:
             list = line.strip().split(",")
