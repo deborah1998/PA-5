@@ -61,7 +61,7 @@ def average_magnitude (earthquakes):
     total=0
     count=0
     for i in range(len(earthquakes)):
-        total=float(total+earthquakes[i][4])
+        total=float(total+int(earthquakes[i][4]))
         count+=1
         average = total/count
         return average
@@ -70,23 +70,26 @@ def average_magnitude (earthquakes):
 #Function Name:num_of_earthquakes_in_distance
 #Purpose:To find the number of earthquakes within a specific distance of a specific location
 #Paramaters: the list earthquakes
-#Return:distance calculation
+#Return:number of earthquakes within the distance of a specific location
 
-def num_of_earthquakes_in_distance(earthquakes,lat1,lon1 ):
+def num_of_earthquakes_in_distance(earthquakes,lat1,lon1,user_distance ):
+    count=0
     for i in range(len(earthquakes)):
         distance =(math.acos(math.sin(lat1) * math.sin(int(earthquakes[1])) + math.cos(lat1) * math.cos(earthquakes[1]) * math.cos(lon1 - earthquakes[2])) * 6371)
-    return distance
+        if distance <= user_distance:
+            count+=1
+    return count
 
 
 def menu():
     print("The  choices you have to choose from to laern more about earthquakes is dates, magnitude, and distance")
     choice = input("What would you like to know about earthquakes?")
     if choice.lower == "dates":
-        find_earthquakes_on_date(earthquakes,outfile_name)
+        find_earthquakes_on_date()
     if choice.lower =="magnitude":
-        average_magnitude(earthquakes)
+        average_magnitude()
     if choice.lower == "distance":
-        num_of_earthquakes_in_distance(earthquakes,lat1,lon1)
+        num_of_earthquakes_in_distance()
 
 
 
@@ -95,8 +98,7 @@ def main():
     print("The purpose of this program is to analyze earthquake data based on your choice")
     new_file=file_reader()
     new_list =read_file(new_file)
-    avg_magnitude = round(average_magnitude(new_list))
-    print(avg_magnitude)
+
 
 
     menu()
