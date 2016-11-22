@@ -8,9 +8,9 @@ Input for specific month:10
 Input for specific day:14
 Input for specific year:2016
 Output(to a file):
-
-
-
+2016-10-14T00:30:45.950Z,-37.4369,179.0873,10,4.8,0.633,us20007dz4,165km NE of Gisborne New Zealand,5.7,1.8,0.113
+2016-10-14T01:32:40.910Z,-4.173,154.0559,46.2,4.7,1.887,us20007dzi,118km ENE of Taron Papua New Guinea,8.7,9.1,0.105
+2016-10-14T17:23:21.320Z,36.791,71.1476,195.06,4.4,0.843,us20007e6h,29km ESE of Jarm Afghanistan,8,7.9,0.155
 
 
 
