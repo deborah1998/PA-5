@@ -7,4 +7,5 @@ with getting my program to write toa file although I think I set up a pretty goo
 I found it extremley frustrating trying to rectify my code and having various errors output to the console.I wasnt very satisfied with my coding and i found myself
 getting confused on things that i was initally good on, i found it difficult to follow my algoorithms so i consulted my notes and listened over at
 previous panapto rectordings from the class and referred to my textbook howeve I  did find myself getting stuck when it came to my  error checking and
-the syntax of my code especially when it came to the calculations involved with the assignment.
+the syntax of my code especially when it came to the calculations involved with the assignment.All in all i definitley struggled with this PA , I was
+more confident at the onset of starting my cide but i struglled in the middle and alort towards the end trying to solve the problem given to me.

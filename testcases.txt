@@ -21,9 +21,12 @@ TestCases:
 
 
 
-4.)Description:if the user inputs an invalid filename
-Input for inputfile:bdfjdhfb.txt
-Output:
+4.)Description:Errror cheking if the user inputs an invalid filename
+Input for inputfile:bob.txt
+Output:Invalid Input! Please enter the file you would like to input:
+
+
+
 
 
 
