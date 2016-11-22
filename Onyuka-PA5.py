@@ -26,10 +26,8 @@ def read_file(file_name):
     try:
         inputfile=open(file_name,"r")
         earthquakes=[]
-        list=[]
         for line in inputfile:
             earthquakes.append(line.strip().split(","))
-            list.append(earthquakes[0].split("T"))
         inputfile.close()
     except FileNotFoundError:
         print("Sorry this file is not Found")
@@ -88,8 +86,7 @@ def num_of_earthquakes_in_distance(earthquakes,lat1,lon1,user_distance ):
 def menu():
     print("The choices you have to choose from to learn more about earthquakes is dates, magnitude, and distance")
     choice = input("What would you like to know about earthquakes?")
-    return choice
-
+    return
 
 
 def main():
@@ -97,9 +94,9 @@ def main():
     print("The purpose of this program is to analyze earthquake data based on your choice")
     new_file=file_reader()
     new_list =read_file(new_file)
-    outfile_name=input("Please enter the name of the output file:")
-    menu()
-    if choice.lower() == "dates":
+    choice=menu()
+    if choice.lower == "dates":
+        outfile_name = input("Please enter the name of the output file:")
         earth_dates =find_earthquakes_on_date(outfile_name,new_list)
         print(earth_dates)
     if choice.lower =="magnitude":
@@ -115,10 +112,6 @@ def main():
     while choice2.lower == "yes":
         choice2 = input("Would you like to choose another option?")
         menu()
-
-
-
-
 main()
 
 
