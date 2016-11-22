@@ -102,11 +102,12 @@ def main():
     new_list =read_file(new_file)
 
 
-
     menu()
     choice2 = input("Would you like to choose another option?")
     while choice2.lower == "yes":
         menu()
+        choice2 = input("Would you like to choose another option?")
+
 
 main()
 
