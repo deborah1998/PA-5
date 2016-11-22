@@ -48,7 +48,7 @@ def find_earthquakes_on_date(outfile_name,earthquakes):
     month=input("Please enter a specific month(mm)")
     day=input("Please enter a specific day(dd)")
     year=input("Please enter a specific year(yyyy)")
-    earthquake_date=(month+"-"+day+"-"+year)
+    earthquake_date=(year+"-"+month+"-"+day)
     for i in range (len(earthquakes)):
         if earthquake_date == earthquakes[0][0]:
             print(earthquakes[0:9], file =outputfile)
@@ -109,8 +109,9 @@ def main():
     menu()
     choice2 = input("Would you like to choose another option?")
     while choice2.lower == "yes":
-        menu()
         choice2 = input("Would you like to choose another option?")
+    menu()
+
 
 
 
