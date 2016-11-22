@@ -47,8 +47,9 @@ def find_earthquakes_on_date(outfile_name,earthquakes):
     year=input("Please enter a specific year(yyyy)")
     earthquake_date=(year+"-"+month+"-"+day)
     for i in range (len(earthquakes)):
-        if earthquake_date == earthquakes[0][0]:
+        if earthquake_date == earthquakes[0]:
             print(earthquakes[0:9], file =outputfile)
+            return earthquake_date
     outputfile.close()
 
 
@@ -91,13 +92,13 @@ def menu():
 def main():
 
     print("The purpose of this program is to analyze earthquake data based on your choice")
-    new_file=file_reader()
-    new_list =read_file(new_file)
+    inputfile=file_reader()
+    new_list =read_file(inputfile)
     choice=menu()
 
     if choice.lower() == "dates":
-        outfile_name = input("Please enter the name of the output file:")
-        find_earthquakes_on_date(outfile_name,new_list)
+        outputfile = input("Please enter the name of the output file:")
+        find_earthquakes_on_date(outputfile,new_list)
     if choice.lower() =="magnitude":
         avg_mag=average_magnitude(new_list)
         print("The average magnitude of the earthquakes",avg_mag)
@@ -111,8 +112,18 @@ def main():
         while choice2.lower == "yes" and choice2.lower!= "no":
             choice2 = input("Would you like to choose another option?")
             menu()
-
-
+            if choice.lower() == "dates":
+                outputfile = input("Please enter the name of the output file:")
+                find_earthquakes_on_date(outputfile, new_list)
+            if choice.lower() == "magnitude":
+                avg_mag = average_magnitude(new_list)
+                print("The average magnitude of the earthquakes", avg_mag)
+            if choice.lower() == "distance":
+                lat1 = input("Please enter a specific latitude: ")
+                lon1 = input("Please enter a specific longitude:")
+                user_distance = ("Please enter a specific distance:")
+                num_distance = num_of_earthquakes_in_distance(new_list, lat1, lon1, user_distance)
+                print("The number of earthquakes within that distance is", num_distance)
 
 main()
 
