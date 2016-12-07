@@ -1,0 +1,42 @@
+CS201 Programming Assignment 5 checklist & grading sheet
+PA Grade = 37.25 / 50
+
+Comments:
+2/2 Intro comments complete and clear
+0.25/1 Appropriate in-line commentary given - need in your larger functions, especially main
+2/2 Function comments provided for every function
+
+Format:
+1/1 Proper use of upper/lowercase
+1/1 Appropriate use of whitespace
+
+Supporting Documents:
+2/3 Test cases on test file - the point of a test file is so that you can calculate the answers. need to put actual answers in test cases for the test cases to help you test your code.
+0/2 Reflection
+
+Correctness/Completeness Issues:
+2/2 User provides input and output file name, with error checking on input name
+2/2 User provides date, distance, latitude, longitude
+1/2 All inputs are error checked as appropriate - date and distance are not error checked
+2/2 Reads from the file correctly
+2/2 Stores data from file in a list of lists correctly
+2/3 Calculates the average magnitude of all earthquakes - crashes because magnitudes are floats, not ints.
+Also, can't calculate average until you have everything added together.
+3/4 Calculates the number of earthquakes within a specific distance - need to look at earthquake[i][1] and earthquake[i][2] to get the latitude and longitudes. Need to cast to floats. Need to turn everything to radians before using trig functions.
+2/4 Saves to a file all earthquakes that occurred on a specific date - output file is empty because slice is wrong (should be 0:10), and comparison is not quite right.
+Need to compare the earthquake at index i's first index's first 10 values.
+Output file is closed after the first earthquake is compared. Can't close file until you're done writing.
+2/3 Provides a menu, which continues until the user chooses to stop - menu doesn't loop
+2/2 outputs results
+1/1 No other logic errors
+
+Design Issues:
+1/1 Appropriate variable names
+2/2 Clear prompts
+3/3 Clear and well formatted output
+4/5 Appropriate function design - user input should not happen in a calculation function. Pass values to calculation function via parameters.
+
+Extra Credit: an additional question (more points for more interesting questions)
+
+Additional Comments:
+-2 code crashes on every option
